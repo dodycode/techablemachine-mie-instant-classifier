@@ -7,8 +7,8 @@ let model, webcam, labelContainer, maxPredictions;
 
 // Load the image model and setup the webcam
 async function init() {
-	const modelURL = "model.json";
-	const metadataURL = "metadata.json";
+	const modelURL = "https://techablemachine-mie-instant-classifier.now.sh/model.json";
+	const metadataURL = "https://techablemachine-mie-instant-classifier.now.sh/metadata.json";
 	
 	document.querySelector('#start-btn').innerHTML = 'Starting App....';
 	document.querySelector('#start-btn').disabled = true;
