@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Product Sans Regular';
+}
+
+#webcam-container {
+	position: relative;
+}
+
+#webcam-container > canvas{
+	border-radius: 3%;
+	margin-top: 5px;
+}
+
+#label-container{
+	display: none;
+	flex-direction: column;
+	width: 300px;
+	background-color: white;
+	padding: 18px;
+	position: absolute;
+	bottom: -110px;
+	right: -75px;
+	border-radius: .25rem;
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+}
+
+.child-container{
+	display: flex;
+}
+
+.child-label{
+	width: 48%;
+	font-family: 'Product Sans Regular';
+}
+
+.child-value{
+	width: 80%;
+	padding: 4px;
+}
+
+.progress-bar{
+	background-color: black;
+	border-radius: .25rem;
+}
+
+.progress-bar > div{
+	background-color: orange;
+	height: 20px;
+	width: 0%;
+	border-radius: .25rem;
+}
+
+.start-btn{
+	border: none;
+	background-color: #4285F4;
+	border-color: #4285F4;
+	color: #fff;
+	padding: 17px 44px;
+	border-radius: .25rem;
+	font-size: 20px;
+	font-family: 'Product Sans Bold';
+	cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+	#webcam-container{
+		position: relative;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	#label-container{
+		position: relative;
+		bottom: 30px;
+		width: 88%;
+		left: unset;
+		right: unset;
+	}
+}
