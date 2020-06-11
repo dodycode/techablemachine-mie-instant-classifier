@@ -1,4 +1,7 @@
 # techablemachine-mie-instant-classifier
+
+![preview webapp](https://i.imgur.com/C67jOsT.jpg)
+
 Google Teachable Machine Mie Instant Classifier
 https://teachablemachine.withgoogle.com/
 
